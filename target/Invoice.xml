@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<rsm:TaxInvoiceCrossIndustryInvoice xmlns:ram="urn:etda:uncefact:data:standard:TaxInvoice_ReusableAggregateBusinessInformationEntity:2" xmlns:rsm="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2">
+  <rsm:ExchangedDocumentContext>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID schemeAgencyID="" schemeVersionID="" />
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID />
+    <ram:Name />
+    <ram:TypeCode />
+    <ram:IssueDateTime />
+    <ram:CreationDateTime />
+    <ram:IncludeNode>
+      <ram:Subject />
+    </ram:IncludeNode>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:ApplicableHeaderTradeAgreement />
+    <ram:ApplicableHeaderTradeDelivery />
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:InvoiceCurrencyCode listID="" />
+      <ram:ApplicableTradeTax>
+        <ram:TypeCode />
+        <ram:CalculatedRate />
+        <ram:BasicAmount />
+        <ram:ColculatedAmount />
+      </ram:ApplicableTradeTax>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>false</ram:ChargeIndicator>
+        <ram:ActualAmount />
+        <ram:ReasonCode />
+        <ram:Reason />
+      </ram:SpecifiedTradeAllowanceCharge>
+    </ram:ApplicableHeaderTradeSettlement>
+    <ram:IncludeSupplyChainTradeLineItem>
+      <ram:AssocicatedDocumentLineDocument>
+        <ram:LineID />
+      </ram:AssocicatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:ID />
+        <ram:Name />
+        <ram:IndividualTradeProductInstance>
+          <ram:ExpireDateTime />
+        </ram:IndividualTradeProductInstance>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChangeAmount />
+        </ram:GrossPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity UnitCode="" />
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicativeTradeTax>
+          <ram:TypeCode />
+          <ram:CalculatedRate />
+          <ram:BasicAmount />
+          <ram:CalculatedAmount />
+        </ram:ApplicativeTradeTax>
+        <ram:SpecifiedTradeAllowanceCharge>
+          <ram:ChargeIndicator>false</ram:ChargeIndicator>
+          <ram:ActualAmount />
+          <ram:ReasonCode />
+          <ram:Reason />
+        </ram:SpecifiedTradeAllowanceCharge>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:TaxTotalAmount />
+          <ram:NetLineTotalAmount />
+          <ram:NetIncludingTaxesLineTotalAmount />
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludeSupplyChainTradeLineItem>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:TaxInvoiceCrossIndustryInvoice>
